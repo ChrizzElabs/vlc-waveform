@@ -17,7 +17,7 @@ and click-to-seek navigation.
 Tested:
 
 - Pause, seek and resume
-- NAS playback without dropouts during testing
+- Playback from network shares without dropouts during testing
 - Uninstallation
 - Preservation of user settings
 
