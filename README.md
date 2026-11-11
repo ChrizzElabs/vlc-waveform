@@ -6,6 +6,8 @@ VLC Waveform displays the waveform of an entire audio file directly inside VLC.
 
 Click anywhere on the waveform to jump to that position. Playback remains paused when seeking from pause.
 
+![VLC Waveform in VLC: full-file waveform with the Standard, Compact and Contrast view buttons](docs/screenshot.png)
+
 ## Features
 
 - Full-file waveform visualization
