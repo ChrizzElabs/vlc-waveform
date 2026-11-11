@@ -1,0 +1,9 @@
+[GNUPG:] NEWSIG ffmpeg-devel@ffmpeg.org
+gpgv: Signature made Fri Sep 18 04:46:02 2026 CEST
+gpgv:                using RSA key FCF986EA15E6E293A5644F10B4322F04D67658D8
+gpgv:                issuer "ffmpeg-devel@ffmpeg.org"
+[GNUPG:] KEY_CONSIDERED FCF986EA15E6E293A5644F10B4322F04D67658D8 0
+[GNUPG:] SIG_ID GmXZcve3JSWydv8vKw3HZcKt8lQ 2026-09-18 1789699562
+[GNUPG:] GOODSIG B4322F04D67658D8 FFmpeg release signing key <ffmpeg-devel@ffmpeg.org>
+gpgv: Good signature from "FFmpeg release signing key <ffmpeg-devel@ffmpeg.org>"
+[GNUPG:] VALIDSIG FCF986EA15E6E293A5644F10B4322F04D67658D8 2026-09-18 1789699562 0 4 0 1 10 00 FCF986EA15E6E293A5644F10B4322F04D67658D8

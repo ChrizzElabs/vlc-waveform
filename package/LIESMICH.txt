@@ -1,0 +1,62 @@
+VLC Waveform - natives Plugin fuer VLC 3, Windows 64 Bit
+
+INSTALLATION
+1. VLC schliessen.
+2. ZIP vollstaendig entpacken, dann Installieren.cmd doppelt anklicken
+   (keine Administratorrechte erforderlich).
+3. VLC normal starten und eine Audiodatei oeffnen.
+
+BEDIENUNG
+Die Wellenform erscheint in VLCs eigenem Anzeigefeld.
+Klicken: Wiedergabeposition setzen (auch in Pause).
+Leertaste: ab dieser Stelle abspielen / wieder pausieren.
+Ein Klick in Pause startet die Wiedergabe nicht automatisch.
+Einfache Gesamtansicht ohne Zoom, Ziehen oder zusaetzliche Schaltflaechen.
+Play, Pause, Lautstaerke und VLCs Zeitleiste bleiben unveraendert.
+
+Kein Browserfenster. Kein separater Hintergrunddienst. Keine Python-Installation.
+FFmpeg analysiert lokale Audiodateien als unsichtbarer Unterprozess.
+Ergebnisse werden unter %LOCALAPPDATA%\VLCWaveform\cache gespeichert.
+Die Anzeige wird nur bei Aenderungen aktualisiert, maximal achtmal pro Sekunde.
+Im unveraenderten Pausenzustand keine neuen Bilder. Analyse mit niedriger Prioritaet.
+SCHALTER UND ANSICHTEN (1.0.4)
+Oben Standard, Kompakt oder Kontrast waehlen. Alle zeigen die gesamte Datei.
+Aus schaltet Wellenform und neue Analysen ab. Wieder einschalten im VLC-Menue:
+Audio > Visualisierungen > Wellenform - Standard / Kompakt / Kontrast.
+Ein/Aus und Ansicht werden getrennt von VLCs Einstellungen gespeichert.
+Bei Pause bleibt der Ton pausiert; ein Ausgabewechsel kann bis zum Fortsetzen
+warten. Klick setzt die Position, Leertaste spielt/pausiert. Kein Zoom/Ziehen.
+
+NAS-MP3-VORLESEPUFFER (1.0.3)
+MP3-Dateien bis 16 MiB an UNC-Pfaden (\\Server\Freigabe\Datei.mp3) werden
+vor dem Abspielen einmal vollstaendig in RAM eingelesen. Danach liest VLC den
+Ton aus dem Speicher; keine zusaetzliche lokale Dauerdatei und kein Startskript.
+Bei langsamem NAS kann das erste Einlesen dauern. Lokale/groessere Dateien und
+andere Formate bleiben unveraendert. Keine generelle Reparatur des Netzwerks;
+die getrennte Wellenformanalyse kann die Originaldatei weiterhin einmal lesen.
+Fuer Netzwerkstreams ohne lokale Datei gibt es keine Gesamt-Wellenform.
+
+DEINSTALLATION
+VLC schliessen, Deinstallieren.cmd starten.
+Vor der Installation werden Einstellungen gesichert. Spaeter durch den
+Benutzer geaenderte Optionen werden nicht blind zurueckgesetzt.
+
+QUELLTEXT UND LIZENZEN
+Plugin: GPL-2.0-or-later, vollstaendiger Quelltext im Ordner source.
+VLC-Schnittstellen: VideoLAN, https://www.videolan.org/vlc/
+FFmpeg: eigener unmodifizierter FFmpeg-9.0.2-Quellstand, https://ffmpeg.org/
+Build-Konfiguration und Versionsstand siehe decoder/ffmpeg-version.txt.
+Dieses Paket aendert weder vlc.exe noch vorhandene VLC-DLLs.
+
+LIZENZEN UND WEITERGABE
+FFmpeg 9.0.2 als reiner Audiobuild unter LGPL-2.1-or-later, ohne externe
+Codec-Bibliotheken, GPL-/Nonfree-Optionen und Netzwerkzugriff.
+Vollstaendige passende Quellen und Bauinformationen liegen unter source\.
+WEITERGABE.txt nennt die enthaltenen Lizenzen und den einfachen Weitergabeweg.
+Fuer unveraenderte Weitergabe den vollstaendigen Installer oder das ganze ZIP
+einschliesslich der Quell-/Lizenzdateien verwenden, nicht einzelne Binaerdateien.
+
+GRENZEN
+VLC 3.x x64 fuer Windows. Bei Filmen bleibt die normale Videoausgabe
+unveraendert; die Wellenform ist fuer reine Audiodateien vorgesehen.
+Lokale Dateien bis 24 Stunden; Streams werden nicht vollstaendig analysiert.

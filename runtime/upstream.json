@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "file": "mingw-w64_12.0.0.orig.tar.bz2",
+      "url": "https://deb.debian.org/debian/pool/main/m/mingw-w64/mingw-w64_12.0.0.orig.tar.bz2",
+      "sha256": "cc41898aac4b6e8dd5cffd7331b9d9515b912df4420a3a612b5ea2955bbeed2f"
+    },
+    {
+      "file": "mingw-w64_12.0.0-5.debian.tar.xz",
+      "url": "https://deb.debian.org/debian/pool/main/m/mingw-w64/mingw-w64_12.0.0-5.debian.tar.xz",
+      "sha256": "27513ca9c5730bc58eadda089022979b40fa1a5c05893ca3e339345d8c832dba"
+    },
+    {
+      "file": "vlc-3.0.24.tar.xz",
+      "url": "https://download.videolan.org/pub/videolan/vlc/3.0.24/vlc-3.0.24.tar.xz",
+      "sha256": "e7cab503d1d7d5849b89d2cf0e1ee60d0ef6d012407791b644b9cfc0cc225fdf"
+    },
+    {
+      "file": "zig-0.13-runtime-sources.zip",
+      "upstream_archive_sha256": "d859994725ef9402381e557c60bb57497215682e355204d754ee3df75ee3c158",
+      "upstream_url": "https://ziglang.org/download/0.13.0/zig-windows-x86_64-0.13.0.zip",
+      "sha256": "6ac6efb9c1d64f2af3235528c5cdf66582b3d737ca18bc368defea4eba7e4718"
+    }
+  ]
+}

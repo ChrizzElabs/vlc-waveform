@@ -1,0 +1,46 @@
+VLC Waveform 1.0.4 - passende Quellen und Bauinformationen
+
+1. FFmpeg
+   ffmpeg\ffmpeg-9.0.2.tar.xz ist der unveraenderte offizielle Quellstand.
+   Signatur, oeffentlicher Releaseschluessel und SHA256 stehen daneben;
+   build-record\signature-verification.txt belegt die gepruefte Signatur.
+   Schluesselfingerabdruck: FCF986EA15E6E293A5644F10B4322F04D67658D8.
+   Lokale FFmpeg-Quellcodeaenderungen: keine. Die Auswahl erfolgt ausschliesslich
+   ueber configure. Vollstaendige Konfiguration liegt in build-record\.
+   Bau: decoder\build-ffmpeg.sh bzw. build-ffmpeg.ps1, Anleitung in decoder\README.md.
+   Nur LGPL-2.1-or-later, keine externen Codec-/Filterbibliotheken.
+
+2. Plugin
+   plugin\waveform.c ist der zum mitgelieferten DLL-Hash passende Quelltext.
+   Lizenz: GPL-2.0-or-later. SDK-Header und Importdefinition liegen unter plugin\sdk.
+   Zugehoeriger offizieller VLC-3.0.24-Quelltext: runtime\vlc-3.0.24.tar.xz.
+   Bau mit Zig 0.13.0 x86_64-windows-gnu, siehe plugin\README.md und build.ps1
+   -Release (keine Debugdaten, neutrale Baupfade).
+   Alleinige Referenz zu Buildwerkzeugen bedeutet nicht, dass deren Binaerdateien
+   mitgeliefert werden; Standardcompiler/-werkzeuge sind separat zu beschaffen.
+   FFmpeg und VLC werden vom Plugin nicht statisch eingebunden.
+
+3. Laufzeitquellen und Hinweise
+   runtime\mingw-w64_12.0.0.orig.tar.bz2 und die Debian-Patches gehoeren zum
+   FFmpeg-Crosscompiler-CRT; upstream.json enthaelt Herkunft und Pruefsummen.
+   runtime\zig-0.13-runtime-sources.zip enthaelt die MinGW-/Compiler-Runtimequellen
+   und Lizenz des fuer das Plugin verwendeten, hashgeprueften Zig 0.13.0.
+   GCC-Runtime-Library-Exception 3.1 und Dritt-Copyrighttexte: decoder\notices.
+   Keine libwinpthread- oder sonstigen zusaetzlichen Codec-DLLs erforderlich.
+
+4. Installer
+   installer\ und package\ enthalten die bevorzugten Quellen der Installations-
+   und Deinstallationsskripte. Inno Setup 7.1.1, pro Benutzer ohne Adminrechte.
+   package-release.py erzeugt ein explizit ausgewaehltes Paket ohne private
+   Konfigurationen, Testmedien, Anmeldedaten, Prozesslogs oder Browser-Altbestand.
+   Fuer den Neubau die Paketstruktur gemaess package-release.py herstellen;
+   plugin\ enthaelt die passenden nativen Plugin-Baudateien der Minimalfassung.
+
+DOWNLOADSEITEN-TEXT (als Beschreibung zusammen mit dem Installer verwendbar)
+VLC Waveform 1.0.4 - unabhaengiges natives Wellenform-Plugin fuer VLC 3.x x64
+unter Windows. Plugin GPL-2.0-or-later, FFmpeg-Audiodecoder LGPL-2.1-or-later.
+Die jeweils passenden vollstaendigen Quellen und Lizenztexte sind direkt im
+Offline-Installer enthalten und werden unter VLCWaveform\source installiert.
+Optionaler separater Quelldownload: VLC-Waveform-Quellen-1.0.4.zip.
+VLC muss separat installiert sein. Kein Browser, kein Hintergrunddienst.
+Das Setup ist nicht digital signiert; Windows kann einen Warnhinweis anzeigen.

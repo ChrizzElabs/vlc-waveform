@@ -1,0 +1,39 @@
+VLC Waveform 1.0.4 - Schalter und Ansichten
+- Nativer Aus-Schalter und drei Ansichten: Standard, Kompakt und Kontrast.
+- Wiedereinschalten jederzeit ueber Audio > Visualisierungen > Wellenform.
+- Eigene GDI-Symbole an den Bedienelementen, passendes Original-Setupicon.
+- Ein/Aus und Ansicht in eigener Einstellungsdatei, keine globale VLC-Speicherung.
+- Pause bleibt beim Umschalten erhalten; Ausgabeneustart ggf. erst nach Fortsetzen.
+- Native Bitmapausgabe innerhalb VLCs eigener Visualisierung: kein wiederholtes
+  blockierendes Warten auf Decoderbilder, kein Thread-Zwangsabbruch.
+- NAS-Vorlesepuffer unveraendert, bei Aus keine neue Analyse/Vorpufferung;
+  bereits geladener Ton darf weiterlaufen, ohne seinen RAM-Puffer zu verlieren.
+
+VLC Waveform 1.0.3 - NAS-MP3-Vorlesepuffer
+- Kleiner nativer Streamfilter im selben Plugin: UNC-MP3-Dateien bis 16 MiB
+  vor dem Abspielen einmal in RAM einlesen, anschliessend Originalbytes und
+  Positionswechsel ohne weitere NAS-Lesezugriffe fuer die Tonwiedergabe.
+- Nur bei aktivem Waveform-Interface; keine Playlist-/Treiber-/globalen
+  Caching-Aenderungen, kein Dienst, kein zusaetzliches Startprogramm.
+- Lokale/groessere Dateien und andere Formate werden nicht vorgepuffert.
+- Einmaliges Einlesen kann auf langsamem NAS den Start verzoegern.
+- Minimalanzeige ohne Zoom und vorhandener Wellenformcache unveraendert.
+
+VLC Waveform 1.0.2 - Minimalfassung
+- Zoom, Alles-Buttons, Mausradzoom und Zieh-Vorschau entfernt.
+- Anzeige 800x240 statt 1200x420; maximal acht statt etwa 30 Bilder/s.
+- Statische Wellenform zwischengespeichert; keine Bildausgabe ohne Aenderung,
+  insbesondere kein Dauerzeichnen in Pause. Zeichnen ohne gemeinsame Zustandssperre.
+- FFmpeg-Analyse mit einem Decoderthread und niedriger Prozessprioritaet;
+  Analyseworker mit Hintergrundprioritaet. Erkannte Videospuren von Analyse ausgenommen.
+- Audioaufloesung und vorhandener Analysecache unveraendert.
+- Vollstaendige passende Quellen und Lizenzunterlagen weiterhin enthalten.
+
+VLC Waveform 1.0.1 (vorheriger Stand)
+- Bisherigen Gyan-FFmpeg-7.1-Allzweckbuild durch projektgebundenen FFmpeg-9.0.2-
+  Audiobuild ohne externe Codec-Bibliotheken, GPL-/Nonfree-Optionen und Netzwerk ersetzt.
+- Passende vollstaendige FFmpeg-Quellen, Plugin-/SDK-/Laufzeitquellen und
+  Buildinformationen direkt im Offline-Installer und ZIP enthalten.
+- Lizenz-/Weitergabehinweise und Text fuer eine Downloadseite ergaenzt.
+- Native Pluginquellen funktional unveraendert; Release-DLL ohne Debugdaten
+  und mit neutralisierten Baupfaden neu gebaut und gezielt integriert geprueft.

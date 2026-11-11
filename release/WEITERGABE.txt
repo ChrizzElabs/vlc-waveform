@@ -1,0 +1,34 @@
+VLC Waveform 1.0.4 - Lizenzen und Weitergabe
+
+Dieses Paket enthaelt die passenden vollstaendigen FFmpeg-Quellen direkt
+unter source\ffmpeg\ sowie Pluginquellen, Bauanleitungen und Laufzeithinweise.
+Sie muessen fuer eine unveraenderte Weitergabe nicht nachtraeglich gesammelt
+werden. Das Setup installiert diese Unterlagen unter VLCWaveform\source.
+
+VLC-Waveform-Plugin: GPL-2.0-or-later; Lizenztext COPYING.txt.
+FFmpeg 9.0.2: LGPL-2.1-or-later; Lizenztexte unter decoder\.
+FFmpeg wird als separates Programm aufgerufen, nicht in das Plugin gelinkt.
+Der projektgebundene Audiobuild enthaelt keine externen Codec-Bibliotheken,
+keine --enable-gpl- oder --enable-nonfree-Option und keinen Netzwerkzugriff.
+MinGW-/GCC-/Zig-Laufzeithinweise und Quellen: source\runtime, decoder\notices.
+Installationsassistent erstellt mit Inno Setup (Jordan Russell/Martijn Laan);
+Lizenz: decoder\notices\Inno-Setup-License.txt, https://jrsoftware.org/.
+
+Unveraenderte Weitergabe: den vollstaendigen Installer oder das vollstaendige
+ZIP weitergeben, nicht nur einzelne DLL-/EXE-Dateien ohne ihre Unterlagen.
+Lizenztexte, Herkunftsangaben und Quellpakete beibehalten. Bei eigenen Aenderungen
+muessen auch die dazu passenden Quellen/Bauinformationen aktualisiert werden.
+Fuer eine Downloadseite ist ein fertiger Text im Quellpaket enthalten.
+
+VLC selbst ist nicht enthalten; VLC 3.x x64 muss separat installiert sein.
+Dieses Projekt ist ein unabhaengiges Plugin, kein offizielles VideoLAN-Produkt.
+FFmpeg ist eine Marke von Fabrice Bellard; VLC/VideoLAN-Marken bleiben bei
+ihren jeweiligen Inhabern. Keine ausschliesslichen Rechte an Drittcode beansprucht.
+
+Keine Garantie, kein bezahlter Support und keine Einschraenkung der in den
+beigefuegten freien Lizenzen gewaehrten Rechte. Die Software ist unsigniert.
+Codec-Patent-/Markenfragen koennen von Land und Einsatz abhaengen; diese
+technische Lizenzdokumentation ist keine weltweite juristische Freigabe.
+
+Es wurde nichts oeffentlich hochgeladen. Der Besitzer entscheidet selbst ueber
+Ort und Zeitpunkt einer Veroeffentlichung.

@@ -1,0 +1,48 @@
+VLC Waveform 1.0.4 - Windows-Setup
+
+INSTALLATION
+VLC schliessen, VLC-Waveform-Setup-1.0.4-x64.exe doppelt anklicken und
+dem Assistenten folgen. VLC 3.x (64 Bit) muss bereits installiert sein.
+Der VLC-Ordner wird automatisch vorgeschlagen und kann angepasst werden.
+Keine Administratorrechte, kein Download waehrend der Installation.
+
+BEDIENUNG
+Audiodatei in VLC oeffnen. Die Wellenform erscheint im VLC-Anzeigefeld.
+In Pause eine Stelle anklicken und mit Space ab dort abhoeren.
+Eine einfache Gesamtwellenform ohne Zoom und Ziehen. Ein Klick startet
+nicht automatisch die Wiedergabe. Weniger Bildlast, in Pause kein Dauerzeichnen.
+Kein Browser, kein separates Overlay und kein Hintergrunddienst.
+In der Wellenform: Standard, Kompakt oder Kontrast waehlen; Aus schaltet ab.
+Erneut einschalten: VLC-Menue Audio > Visualisierungen > Wellenform - Ansicht.
+Ansichten und Ein/Aus werden getrennt von der VLC-Konfiguration gespeichert.
+Bei pausiertem Ton kann der Ausgabewechsel bis zum Fortsetzen warten;
+VLC wird dafuer nicht automatisch wieder abgespielt.
+MP3-Dateien bis 16 MiB an UNC-Netzwerkpfaden werden vor dem Abspielen einmal
+in RAM eingelesen. Danach keine weiteren Netzwerklesezugriffe fuer den Ton.
+Bei langsamem NAS kann dieses einmalige Einlesen vor Wiedergabestart dauern.
+Groessere Dateien, lokale Dateien und andere Formate bleiben unveraendert.
+
+DEINSTALLATION
+VLC schliessen. Unter Windows > Einstellungen > Apps > Installierte Apps
+"VLC Waveform" entfernen. Alternativ im Startmenue "VLC Waveform entfernen".
+Einstellungs-Backups und Wellenform-Cache bleiben absichtlich erhalten.
+Setup beendet niemals laufende VLC-Fenster.
+
+INSTALLATIONSORT
+%LOCALAPPDATA%\VLCWaveform
+VLCs eigene Programmdateien bleiben unveraendert.
+Falls VLC aus einem bereits laufenden Programm gestartet wird, dieses
+Programm nach der Installation neu starten (aktualisierter Plugin-Pfad).
+
+LIZENZEN UND QUELLTEXT
+Plugin GPL-2.0-or-later: COPYING.txt und source\plugin\.
+FFmpeg 9.0.2 Audiobuild LGPL-2.1-or-later: decoder\COPYING.LGPLv2.1.txt.
+Passende vollstaendige Quellen, Bauinformationen und Lizenzen sind enthalten;
+keine private Offline-Sicherung eines fremden Allzweck-Builds mehr.
+Hinweise fuer unveraenderte Weitergabe: WEITERGABE.txt.
+Alle Quellen werden unter %LOCALAPPDATA%\VLCWaveform\source installiert.
+
+GRENZEN
+Windows 10/11 x64, VLC 3.x x64 (geprueft mit 3.0.24).
+Wellenform fuer lokale Audiodateien bis 24 Stunden, nicht fuer Livestreams.
+Bei Filmen bleibt die normale VLC-Videoausgabe bestehen.

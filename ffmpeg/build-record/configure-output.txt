@@ -1,0 +1,129 @@
+install prefix            /vlc-waveform-audio
+source path               ./src
+C compiler                /root/.cache/vlc-waveform-ffmpeg-9.0.2/toolchain/usr/bin/x86_64-w64-mingw32-gcc-win32
+C library                 mingw64
+host C compiler           /root/.cache/vlc-waveform-ffmpeg-9.0.2/toolchain/usr/bin/gcc
+host C library            glibc
+ARCH                      x86 (generic)
+big-endian                no
+runtime cpu detection     yes
+standalone assembly       yes
+x86 assembler             nasm
+MMX enabled               yes
+MMXEXT enabled            yes
+SSE enabled               yes
+SSSE3 enabled             yes
+AESNI enabled             yes
+CLMUL enabled             yes
+AVX enabled               yes
+AVX2 enabled              yes
+AVX-512 enabled           yes
+AVX-512ICL enabled        yes
+XOP enabled               yes
+FMA3 enabled              yes
+FMA4 enabled              yes
+i686 features enabled     yes
+CMOV is fast              yes
+EBX available             yes
+EBP available             yes
+debug symbols             no
+strip symbols             yes
+optimize for size         no
+optimizations             yes
+static                    yes
+shared                    no
+network support           no
+threading support         w32threads
+safe bitstream reader     yes
+texi2html enabled         no
+perl enabled              yes
+pod2man enabled           no
+makeinfo enabled          no
+makeinfo supports HTML    no
+experimental features     yes
+xmllint enabled           no
+
+External libraries:
+
+External libraries providing hardware acceleration:
+
+Libraries:
+avcodec                 avformat                swresample
+avfilter                avutil
+
+Programs:
+ffmpeg
+
+Enabled decoders:
+aac                     pcm_f32le               pcm_s32le_planar
+aac_fixed               pcm_f64be               pcm_s64be
+ac3                     pcm_f64le               pcm_s64le
+alac                    pcm_lxf                 pcm_s8
+eac3                    pcm_mulaw               pcm_s8_planar
+flac                    pcm_s16be               pcm_sga
+mp3                     pcm_s16be_planar        pcm_u16be
+mp3float                pcm_s16le               pcm_u16le
+opus                    pcm_s16le_planar        pcm_u24be
+pcm_alaw                pcm_s24be               pcm_u24le
+pcm_bluray              pcm_s24daud             pcm_u32be
+pcm_dvd                 pcm_s24le               pcm_u32le
+pcm_f16le               pcm_s24le_planar        pcm_u8
+pcm_f24le               pcm_s32be               pcm_vidc
+pcm_f32be               pcm_s32le               vorbis
+
+Enabled encoders:
+pcm_s16le
+
+Enabled hwaccels:
+
+Enabled parsers:
+aac                     flac                    vorbis
+aac_latm                mpegaudio
+ac3                     opus
+
+Enabled demuxers:
+aac                     flac                    ogg
+ac3                     matroska                wav
+aiff                    mov
+eac3                    mp3
+
+Enabled muxers:
+pcm_s16le
+
+Enabled protocols:
+file                    pipe
+
+Enabled filters:
+aformat                 crop                    rotate
+anull                   format                  transpose
+aresample               hflip                   trim
+atrim                   null                    vflip
+
+Enabled bsfs:
+
+Enabled indevs:
+
+Enabled outdevs:
+
+License: LGPL version 2.1 or later
+
+WARNING: /root/.cache/vlc-waveform-ffmpeg-9.0.2/toolchain/usr/bin/x86_64-w64-mingw32-pkg-config not found, library detection may fail.
+WARNING: Disabled pcm_alaw_at_decoder because not all dependencies are satisfied: audiotoolbox
+WARNING: Disabled pcm_mulaw_at_decoder because not all dependencies are satisfied: audiotoolbox
+config.asm is unchanged
+config_components.h is unchanged
+config_components.asm is unchanged
+checkasm_config_generated.h is unchanged
+checkasm_header_config_generated.h is unchanged
+checkasm_config_generated.asm is unchanged
+libavutil/avconfig.h is unchanged
+libavfilter/filter_list.c is unchanged
+libavcodec/codec_list.c is unchanged
+libavcodec/parser_list.c is unchanged
+libavcodec/bsf_list.c is unchanged
+libavformat/demuxer_list.c is unchanged
+libavformat/muxer_list.c is unchanged
+libavdevice/indev_list.c is unchanged
+libavdevice/outdev_list.c is unchanged
+libavformat/protocol_list.c is unchanged
+ffbuild/config.sh is unchanged

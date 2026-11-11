@@ -1,0 +1,226 @@
+[
+  {
+    "package": "binutils-common",
+    "version": "2.44-3",
+    "archive": "binutils-common_2.44-3_amd64.deb",
+    "bytes": 2508768,
+    "sha256": "002da5d23f8757dee97a2c0a40e0e1d4d85a43da094488ee2ee7068d4d3691f9"
+  },
+  {
+    "package": "binutils-mingw-w64-x86-64",
+    "version": "2.44-3+12+b1",
+    "archive": "binutils-mingw-w64-x86-64_2.44-3+12+b1_amd64.deb",
+    "bytes": 3473344,
+    "sha256": "b53f4a091b16a0d0952b8e3bd6027931641386258f96b37db1f0c62c787221d3"
+  },
+  {
+    "package": "binutils-x86-64-linux-gnu",
+    "version": "2.44-3",
+    "archive": "binutils-x86-64-linux-gnu_2.44-3_amd64.deb",
+    "bytes": 1013844,
+    "sha256": "e6741ce95ff0f7a131c8d9faa3528ccbbc453078bbc62a97da81340ed7462c53"
+  },
+  {
+    "package": "cpp-14-x86-64-linux-gnu",
+    "version": "14.2.0-19",
+    "archive": "cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+    "bytes": 11047460,
+    "sha256": "ef274b5379f5f97fc71619d39ecc84d039d3e184570d207b909c90afaa5d79e0"
+  },
+  {
+    "package": "gcc-14-x86-64-linux-gnu",
+    "version": "14.2.0-19",
+    "archive": "gcc-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+    "bytes": 21389968,
+    "sha256": "a17ef039f1ba482051c3efb5c2c24070002e60dd0bd09fd456ec31481a11b725"
+  },
+  {
+    "package": "gcc-mingw-w64-base",
+    "version": "14.2.0-19+27+b1",
+    "archive": "gcc-mingw-w64-base_14.2.0-19+27+b1_amd64.deb",
+    "bytes": 194268,
+    "sha256": "8d2c64b886ab4a435a78ddc4cd3b510f149b65fbd6be8472e8f460627562718a"
+  },
+  {
+    "package": "gcc-mingw-w64-x86-64-win32-runtime",
+    "version": "14.2.0-19+27+b1",
+    "archive": "gcc-mingw-w64-x86-64-win32-runtime_14.2.0-19+27+b1_amd64.deb",
+    "bytes": 13174644,
+    "sha256": "73a27ee935bec4c81331c3e92c2399e11f161e75fe27898524dcf2bae77f97cb"
+  },
+  {
+    "package": "gcc-mingw-w64-x86-64-win32",
+    "version": "14.2.0-19+27+b1",
+    "archive": "gcc-mingw-w64-x86-64-win32_14.2.0-19+27+b1_amd64.deb",
+    "bytes": 37555380,
+    "sha256": "a4d7abc5c9c97380eeac348d3b94d522a04e80028bb825cd44df09d9ba90092f"
+  },
+  {
+    "package": "gpgv",
+    "version": "2.4.7-21+deb13u1+b5",
+    "archive": "gpgv_2.4.7-21+deb13u1+b5_amd64.deb",
+    "bytes": 241100,
+    "sha256": "104e4c57b98f0b883aa94c68fbe7ec7b48bcdec7c0f9dedf2a51a5054aaeb5ae"
+  },
+  {
+    "package": "libbinutils",
+    "version": "2.44-3",
+    "archive": "libbinutils_2.44-3_amd64.deb",
+    "bytes": 534440,
+    "sha256": "4f4664c8a8f0ad0c8631c39fab02e3d8d86ccc6f4436a1d59f059dbcb0492679"
+  },
+  {
+    "package": "libbz2-1.0",
+    "version": "1.0.8-6",
+    "archive": "libbz2-1.0_1.0.8-6_amd64.deb",
+    "bytes": 37912,
+    "sha256": "cba4cda04244b5e481bb15524bc3c983a7d1b6f330013b9b381706a2fcb65310"
+  },
+  {
+    "package": "libc6-dev",
+    "version": "2.41-12+deb13u4",
+    "archive": "libc6-dev_2.41-12+deb13u4_amd64.deb",
+    "bytes": 1994660,
+    "sha256": "1fda734dabcd80b77266a09ab62b0f1e3e16d8091db62899890b2200745632a2"
+  },
+  {
+    "package": "libc6",
+    "version": "2.41-12+deb13u4",
+    "archive": "libc6_2.41-12+deb13u4_amd64.deb",
+    "bytes": 2846580,
+    "sha256": "967aa62605721081c3eb2a17650611a792aa802d76a6511d1840242623d204c9"
+  },
+  {
+    "package": "libctf-nobfd0",
+    "version": "2.44-3",
+    "archive": "libctf-nobfd0_2.44-3_amd64.deb",
+    "bytes": 155672,
+    "sha256": "e280b2be3db6e584500e865c251605b95c346767d87ccb2524e44992048fc657"
+  },
+  {
+    "package": "libctf0",
+    "version": "2.44-3",
+    "archive": "libctf0_2.44-3_amd64.deb",
+    "bytes": 88616,
+    "sha256": "120cafcd93132a276fa92a8fb4cf39b23d14e5a3e348f4f5580638d71ca95ac5"
+  },
+  {
+    "package": "libgcc-14-dev",
+    "version": "14.2.0-19",
+    "archive": "libgcc-14-dev_14.2.0-19_amd64.deb",
+    "bytes": 2672328,
+    "sha256": "ca6f2d36d96b19b3eb71405b0b80134d8c89380b02204a2512e5c58ceb090628"
+  },
+  {
+    "package": "libgcrypt20",
+    "version": "1.11.0-7+deb13u1",
+    "archive": "libgcrypt20_1.11.0-7+deb13u1_amd64.deb",
+    "bytes": 843104,
+    "sha256": "f0eb41f8cb40896e0822e9ab65611e8383c12b721c76c54764f744abb4a8c247"
+  },
+  {
+    "package": "libgmp10",
+    "version": "2:6.3.0+dfsg-3",
+    "archive": "libgmp10_2%3a6.3.0+dfsg-3_amd64.deb",
+    "bytes": 560220,
+    "sha256": "d0d0265eb01770f17afd0f7c8c0622f80479dcfbbe13653a0debeec61464e622"
+  },
+  {
+    "package": "libgpg-error0",
+    "version": "1.51-4",
+    "archive": "libgpg-error0_1.51-4_amd64.deb",
+    "bytes": 82108,
+    "sha256": "22b95570fd41c113ef6f5651563b4d748292844baab1278a46eb940c1dec2322"
+  },
+  {
+    "package": "libisl23",
+    "version": "0.27-1",
+    "archive": "libisl23_0.27-1_amd64.deb",
+    "bytes": 659152,
+    "sha256": "ac8518042e81c00de1effb72bba7e88ac4ecd488f7ea8b9e3ebc63159cb53b35"
+  },
+  {
+    "package": "libjansson4",
+    "version": "2.14-2+b3",
+    "archive": "libjansson4_2.14-2+b3_amd64.deb",
+    "bytes": 39792,
+    "sha256": "60707a62fe6c1228c3389b12a13ca4efd76defc5532473e547a29e99cf7d2a6e"
+  },
+  {
+    "package": "libmpc3",
+    "version": "1.3.1-1+b3",
+    "archive": "libmpc3_1.3.1-1+b3_amd64.deb",
+    "bytes": 52244,
+    "sha256": "2af0a5c128e03694a41c0b011bd8a958b7297436cdb3a15ddad7866dae8c300b"
+  },
+  {
+    "package": "libmpfr6",
+    "version": "4.2.2-1",
+    "archive": "libmpfr6_4.2.2-1_amd64.deb",
+    "bytes": 729320,
+    "sha256": "75dddce11dabc7fc543712c33dc27b7f2ee66a111763eb5eac654d010b42cd92"
+  },
+  {
+    "package": "libsframe1",
+    "version": "2.44-3",
+    "archive": "libsframe1_2.44-3_amd64.deb",
+    "bytes": 78360,
+    "sha256": "38f625dfdc582717029ac3a3e97c51d994ec2e7a0e9b230c6b44e40d1276311f"
+  },
+  {
+    "package": "libstdc++6",
+    "version": "14.2.0-19",
+    "archive": "libstdc++6_14.2.0-19_amd64.deb",
+    "bytes": 713628,
+    "sha256": "ab1fa05837aa7a92aae748fd07a18a35f7d18bb4a71c4724fe2bbf0e32089de0"
+  },
+  {
+    "package": "libzstd1",
+    "version": "1.5.7+dfsg-1",
+    "archive": "libzstd1_1.5.7+dfsg-1_amd64.deb",
+    "bytes": 303836,
+    "sha256": "2f6a2aeacfc925eba8b00ac9139bc4bfccf8cacb09eb93de067074b26948eef9"
+  },
+  {
+    "package": "linux-libc-dev",
+    "version": "6.12.113-1",
+    "archive": "linux-libc-dev_6.12.113-1_all.deb",
+    "bytes": 3021244,
+    "sha256": "b2d475e01aaf0030c72bd3a0300d311f8be64aa9e82d82eae5da1a04f4010071"
+  },
+  {
+    "package": "make",
+    "version": "4.4.1-2",
+    "archive": "make_4.4.1-2_amd64.deb",
+    "bytes": 463104,
+    "sha256": "70a9709e665383b06068ccd423d62ea191b65355f318a25565dbf324b254cec6"
+  },
+  {
+    "package": "mingw-w64-common",
+    "version": "12.0.0-5",
+    "archive": "mingw-w64-common_12.0.0-5_all.deb",
+    "bytes": 5792084,
+    "sha256": "97dce5d0d8aff1cade4786ad4ef5078345477a598829afcac2e7f2fbc5399990"
+  },
+  {
+    "package": "mingw-w64-x86-64-dev",
+    "version": "12.0.0-5",
+    "archive": "mingw-w64-x86-64-dev_12.0.0-5_all.deb",
+    "bytes": 4871860,
+    "sha256": "0bf89cf7454cccb49cd2a46a6f7b33896f6ae3a1a2fe33e02c40be6155bbb385"
+  },
+  {
+    "package": "nasm",
+    "version": "2.16.03-1",
+    "archive": "nasm_2.16.03-1_amd64.deb",
+    "bytes": 418028,
+    "sha256": "e5096e91356d643f54d46f3ede1d8d44e45c81a3995fb057c28ec51e3791818f"
+  },
+  {
+    "package": "zlib1g",
+    "version": "1:1.3.dfsg+really1.3.1-1+b1",
+    "archive": "zlib1g_1%3a1.3.dfsg+really1.3.1-1+b1_amd64.deb",
+    "bytes": 88892,
+    "sha256": "015be740d6236ad114582dea500c1d907f29e16d6db00566ca32fb68d71ac90d"
+  }
+]
