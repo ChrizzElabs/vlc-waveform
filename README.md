@@ -16,7 +16,6 @@ Click anywhere on the waveform to jump to that position. Playback remains paused
 - Custom icons for each view
 - Enable/disable functionality
 - Re-enable through VLC's Audio > Visualizations menu
-- Automatic RAM read-ahead buffering for NAS MP3 files up to 16 MiB
 
 ## Requirements
 
@@ -24,6 +23,12 @@ Click anywhere on the waveform to jump to that position. Playback remains paused
 - VLC media player 3.x, 64-bit
 
 Other operating systems and VLC 4.x are not supported.
+
+## Notes
+
+- If your files live on a network share: smaller MP3 files (up to 16 MiB) can use
+  a small read-ahead buffer to avoid dropouts on slow connections. Local files
+  are not affected.
 
 ## Download and Installation
 
@@ -39,7 +44,7 @@ A separate ZIP package is available for users who prefer a portable payload with
 
 First public release.
 
-Includes waveform visualization, three display modes, click-to-seek navigation and automatic RAM buffering for supported NAS MP3 files.
+Includes waveform visualization, three display modes and click-to-seek navigation.
 
 Tested:
 

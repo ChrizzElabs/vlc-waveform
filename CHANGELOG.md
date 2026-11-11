@@ -8,7 +8,7 @@ First public release.
 - Click-to-seek navigation; seeking from pause keeps playback paused
 - Three predefined views: Standard, Compact and Contrast with custom icons
 - Enable/disable switch, re-enable through VLC's Audio > Visualizations menu
-- Automatic RAM read-ahead buffering for NAS MP3 files up to 16 MiB
+- Optional read-ahead buffer for MP3 files on network shares (up to 16 MiB)
 - Offline per-user installer (no administrator rights), complete matching
   sources and licenses included
 

@@ -8,13 +8,11 @@ Independent waveform visualization plugin for VLC 3.x on Windows x64.
 - Click-to-seek navigation; seeking from pause keeps playback paused
 - Three predefined views: Standard, Compact and Contrast with custom icons
 - Enable/disable switch, re-enable through VLC's Audio > Visualizations menu
-- Automatic RAM read-ahead buffering for NAS MP3 files up to 16 MiB
 
 ## Release 1.0.4
 
-First public release. Includes waveform visualization, three display modes,
-click-to-seek navigation and automatic RAM buffering for supported NAS MP3
-files.
+First public release. Includes waveform visualization, three display modes
+and click-to-seek navigation.
 
 Tested:
 
