@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.5 - 2026-11-21
+
+- One Audio > Visualizations > Waveform entry. Re-enabling starts in Contour.
+- Contour, Pulse and Grid have independent saved colors; Grid shows measured peaks.
+- Optional slate-clap markers, independently of the display style. Detection is not exhaustive.
+- Toggle hours, minutes, seconds, milliseconds and frame count separately. Frame rate is a separate setting. With hours hidden, the clock continues from `59:59` to `60:00` without shifting seconds.
+- The waveform cache is saved only after regular pipe EOF and a successful FFmpeg exit. Old cache entries are rebuilt on demand.
+
 ## 1.0.4 - 2026-11-11
 
 First public release.

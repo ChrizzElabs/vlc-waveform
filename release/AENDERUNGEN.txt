@@ -1,3 +1,12 @@
+VLC Waveform 1.0.5 - Formen, Klappe und Zeitfelder
+- Ein Menueeintrag Wellenform; bewusstes Wiedereinschalten startet in Kontur.
+- Kontur, Puls und Raster mit je eigener Farbe; Raster zeigt gemessene Spitzen.
+- Klappenmarken separat schaltbar. Die Erkennung kann Klappen uebersehen.
+- HH, MM, SS, mmm und FF einzeln schaltbar; FPS bleibt separat.
+- Ohne HH zaehlen Minuten nach 59 weiter. Die Sekunden bleiben an ihrer Stelle.
+- Die Analyse speichert nur nach regulaerem Pipe-Ende und erfolgreichem
+  Decoderabschluss. Alte Wellenform-Caches werden bei Bedarf neu berechnet.
+
 VLC Waveform 1.0.4 - Schalter und Ansichten
 - Nativer Aus-Schalter und drei Ansichten: Standard, Kompakt und Kontrast.
 - Wiedereinschalten jederzeit ueber Audio > Visualisierungen > Wellenform.

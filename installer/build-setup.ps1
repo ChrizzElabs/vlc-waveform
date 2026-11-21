@@ -26,7 +26,8 @@ $test = if ($TestSetup) { '1' } else { '0' }
 & $compiler "/DPayload=$stage" "/DOutputPath=$output" "/DSetupTest=$test" "/DAppRelease=$Version" (Join-Path $build 'VLC-Waveform.iss')
 if ($LASTEXITCODE -ne 0) { throw "Setup compiler failed: $LASTEXITCODE" }
 $name = if ($TestSetup) { 'VLC-Waveform-Setup-Test.exe' } else { 'VLC-Waveform-Setup-'+$Version+'-x64.exe' }
-$target = Join-Path $root ('dist\'+$name)
+$targetName = if ($TestSetup -and $Version -ne '1.0.4') { 'VLC-Waveform-Setup-Test-'+$Version+'-x64.exe' } else { $name }
+$target = Join-Path $root ('dist\'+$targetName)
 Copy-Item (Join-Path $output $name) $target -Force
 Get-Item $target | Select-Object FullName,Length
 Get-FileHash $target -Algorithm SHA256

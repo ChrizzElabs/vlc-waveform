@@ -39,7 +39,40 @@ Zig 0.13.0 wird über `prepare-tools.ps1` beschafft. Der vollständige VLC-
 Quelltext und Zig-Laufzeitquellen liegen daneben unter `source/runtime`.
 Die Entwicklungs-/Testskripte sind keine zusätzliche Laufzeitvoraussetzung.
 
-## Bedienung 1.0.4 (10.11.2026)
+## Lokale Entwicklungsfassung
+
+Für die getrennte Entwicklungsfassung: `build.ps1 -Candidate` baut nach
+`bin-candidate/`; `python -B native/test-controls.py --candidate` prüft sie mit
+separatem VLC-Profil, ohne Produktivinstallation. Unter **Audio > Visualisierungen**
+gibt es einmal **Wellenform**; bewusstes Anwählen startet in **Kontur**.
+
+- **Kontur** zeigt die positiven und negativen Pegel, **Puls** kompakte Balken,
+  **Raster** Pixelpunkte entsprechend dem Spitzenpegel des jeweiligen Zeitabschnitts.
+- **Farbe** klappt acht Farbfelder auf. Jede Form merkt sich ihre eigene Farbe.
+- **Klappe** blendet mögliche Klappenschläge über jeder Form ein oder aus.
+  Der Finder sucht kurze, isolierte Knalle; er kann Klappen übersehen und markiert
+  gegebenenfalls andere ähnlich klingende Geräusche.
+- **Optionen** und **Aus** bleiben separat. Alte Einstellungen werden übernommen;
+  für ältere DLLs werden zusätzlich passende Rückfallwerte gespeichert.
+
+Unter **Optionen** lassen sich **HH**, **MM**, **SS**, **mmm** und **FF** einzeln
+ein- und ausschalten. Beispielsweise ergeben HH + MM + SS + mmm eine Anzeige
+mit Stunden und Millisekunden; mit FF können auch beide Zusätze sichtbar sein.
+Mindestens ein Feld bleibt an. `FF` zählt
+innerhalb der laufenden Sekunde, standardmäßig bei 25 FPS; die Bildrate ist
+unabhängig wählbar. Bei 120 FPS braucht der Frameanteil drei Stellen. Das ist
+eine Anzeige, kein SMPTE-Import und kein framegenauer Seek. Ein durchreichender
+Videofilter des Wellenform-Ausgabefensters entfernt das Vollbild-Doppelklicksignal
+auf den Bedienelementen und der Wellenform, nicht außerhalb dieses Bereichs.
+Die Ausgabe nutzt vorläufig 800 × 450 (16:9), ohne
+Animation oder gesondertes hochauflösendes Textrendering.
+
+Jedes Feld behält seinen Platz. Ohne `HH` laufen die Minuten über `59` weiter
+(`59:59` → `60:00`); zusätzliche Stellen wachsen nach links. Rechts von
+den Sekunden stehen die Frames und danach die Millisekunden. Ein fester Abstand
+trennt laufende Zeit und Gesamtdauer. Die gewählte Kombination bleibt gespeichert.
+
+## Referenzstand 1.0.4 (10.11.2026)
 
 - Native GDI-Schaltflächen mit eigenen Symbolen: Standard (türkis, bipolar),
   Kompakt (ruhige blaue Impulsbalken), Kontrast (schwarz/gelb mit weißem Cursor).

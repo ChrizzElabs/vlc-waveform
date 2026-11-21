@@ -2,7 +2,8 @@
 param([string]$Version = '1.0.4')
 $ErrorActionPreference = 'Stop'
 $root = Split-Path (Split-Path $PSScriptRoot)
-$setup = Join-Path $root 'dist\VLC-Waveform-Setup-Test.exe'
+$setupName = if ($Version -eq '1.0.4') { 'VLC-Waveform-Setup-Test.exe' } else { 'VLC-Waveform-Setup-Test-'+$Version+'-x64.exe' }
+$setup = Join-Path $root ('dist\'+$setupName)
 $base = Join-Path $env:LOCALAPPDATA ('Temp\opencode\waveform-exe-test-'+[guid]::NewGuid().ToString('N'))
 $app = Join-Path $base 'Setup'
 $config = Join-Path $app 'test-profile\Roaming\vlc\vlcrc'
@@ -94,6 +95,7 @@ try {
   if ([Environment]::GetEnvironmentVariable('VLC_PLUGIN_PATH','User') -ne $userPluginPath) { throw 'Real user plugin path changed by sandbox test!' }
   $tests += 'Real VLC configuration and user plugin path unchanged'
    $result = [pscustomobject]@{ sandbox=$base; tests=$tests; realConfigSha256=$configHash; setupSha256=(Get-FileHash $setup).Hash }
-  $result | ConvertTo-Json -Depth 5 | Set-Content (Join-Path $root 'native\test-results\setup-exe-test.json') -Encoding UTF8
+   $report = if ($Version -eq '1.0.4') { 'native\test-results\setup-exe-test.json' } else { 'native\test-results\release-'+$Version+'\setup-exe-test.json' }
+   $result | ConvertTo-Json -Depth 5 | Set-Content (Join-Path $root $report) -Encoding UTF8
   $result | ConvertTo-Json -Depth 5
 }

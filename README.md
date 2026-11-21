@@ -6,7 +6,9 @@ VLC Waveform displays the waveform of an entire audio file directly inside VLC.
 
 Click anywhere on the waveform to jump to that position. Playback remains paused when seeking from pause.
 
-![VLC Waveform in VLC: full-file waveform with the Standard, Compact and Contrast view buttons](docs/screenshot.png)
+![VLC Waveform in VLC (version 1.0.4)](docs/screenshot.png)
+
+*Screenshot from version 1.0.4; the controls changed in 1.0.5.*
 
 ## Features
 
@@ -14,8 +16,10 @@ Click anywhere on the waveform to jump to that position. Playback remains paused
 - Supported formats: WAV, FLAC, MP3 and M4A
 - Click-to-seek navigation
 - Preserves the paused state when seeking
-- Three predefined views: Standard, Compact and Contrast
-- Custom icons for each view
+- Contour, Pulse and Grid, each with a saved choice of eight colors
+- Grid dots represent measured peak levels
+- Optional slate markers for short, isolated claps (not guaranteed to catch every clap)
+- Independently selectable HH, MM, SS, mmm and FF fields, with a separate frame-rate setting
 - Enable/disable functionality
 - Re-enable through VLC's Audio > Visualizations menu
 
@@ -38,24 +42,13 @@ Download the latest installer from the [GitHub Releases](https://github.com/Chri
 
 The offline installer requires no administrator privileges and installs the plugin for the current user.
 
-After installation, open VLC and select the waveform visualization from the Audio > Visualizations menu (German UI: *Audio > Visualisierungen > Wellenform - Ansicht*).
+After installation, open VLC and select the waveform visualization from the Audio > Visualizations menu (German UI: *Audio > Visualisierungen > Wellenform*).
 
 A separate ZIP package is available for users who prefer a portable payload without the installer.
 
-## Release 1.0.4
+## Release 1.0.5
 
-First public release.
-
-Includes waveform visualization, three display modes and click-to-seek navigation.
-
-Tested:
-
-- Pause, seek and resume
-- Playback from network shares without dropouts during testing
-- Uninstallation
-- Preservation of user settings
-
-Results describe the tested configurations and do not guarantee identical behavior on every system.
+Re-enabling the waveform via the VLC menu starts in Contour. With hours hidden, the clock continues from 59:59 to 60:00. Old waveform caches are rebuilt on demand; a new analysis is saved only after a successful decoder exit.
 
 ## Security and Verification
 
@@ -75,7 +68,7 @@ The distribution includes FFmpeg 9.0.2 audio-decoding components.
 
 This repository contains the plugin, installer and packaging sources plus build documentation (see `plugin/README.md`, `installer/README.md`, `decoder/README.md` and `QUELLEN.txt`).
 
-The release contains a separate, complete source archive, including the corresponding sources for the distributed components: upstream source archives, toolchain runtime sources and LGPL relink objects. Those large archives are intentionally not stored in this repository; they are part of the release asset `VLC-Waveform-Quellen-1.0.4.zip`.
+The release contains a separate, complete source archive, including the corresponding sources for the distributed components: upstream source archives, toolchain runtime sources and LGPL relink objects. Those large archives are intentionally not stored in this repository; they are part of the release asset `VLC-Waveform-Quellen-1.0.5.zip`.
 
 ## Licensing
 
